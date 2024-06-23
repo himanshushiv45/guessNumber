@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <a href="#">Home</a>
+        <h2>Guess A Correct Number</h2>
+        <a href="https://github.com/himanshushiv45"><i class="fa-brands fa-github github-logo"></i></a>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <h2>Enter a guess Between 0 to 100 :</h2>
+
+            <form>
+                <!-- form tag isiliye le rahe hai kyuki jaise hi hum enter press krte hai ak onsubmit event triger hota hai -->
+                <input type="number" placeholder="Enter a number" class="inp" min="1" max="100" required>
+                <div>
+
+                    <!-- Form ke andar ki btns by-default form ko submit krti hai!! -->
+                    <button class="submitBtn">Submit</button>
+                    <button class="startBtn" disabled>Start GAME</button>
+                </div>
+            </form>
+
+        
+            <p id="result"></p>
+            <p id="allResult"><span id="guessNumber"></span></p>
+        </div>
+
+    </main>
+
+
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
